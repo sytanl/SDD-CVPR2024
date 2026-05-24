@@ -15,6 +15,7 @@ from .DKD import DKD
 from .SDD_DKD import SDD_DKD
 from .nkd import NKDLoss
 from .SDD_nkd import SDD_NKDLoss
+from .KD_ours import SDD_KD_ours
 
 distiller_dict = {
     "NONE": Vanilla,
@@ -33,6 +34,7 @@ distiller_dict = {
     "DKD": DKD,
     "SDD_DKD": SDD_DKD,
     "SDD_KD": SDD_KD,
+    "SDD_KD_ours": SDD_KD_ours,
     "NKD": NKDLoss,
     "SDD_NKD": SDD_NKDLoss
 }

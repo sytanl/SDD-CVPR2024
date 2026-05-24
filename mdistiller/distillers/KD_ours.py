@@ -138,9 +138,9 @@ class KD(Distiller):
         return logits_student, losses_dict
 
 
-class SDD_KD(Distiller):
+class SDD_KD_ours(Distiller):
     def __init__(self, student, teacher, cfg):
-        super(SDD_KD, self).__init__(student, teacher)
+        super(SDD_KD_ours, self).__init__(student, teacher)
         self.temperature = cfg.KD.TEMPERATURE
         self.ce_loss_weight = cfg.KD.LOSS.CE_WEIGHT
         self.kd_loss_weight = cfg.KD.LOSS.KD_WEIGHT

@@ -3,7 +3,7 @@ EXPERIMENT:
   TAG: "SDD_KD,res32x4_sdd,res8x4_sdd"
   PROJECT: "cifar100_baselines"
 DISTILLER:
-  TYPE: "SDD_KD"
+  TYPE: "SDD_KD_ours"
   TEACHER: "resnet32x4_sdd"
   STUDENT: "resnet8x4_sdd"
 SOLVER:
